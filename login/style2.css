@@ -1,0 +1,95 @@
+body{
+    background-image: url(background.jpg); 
+    background-size:cover;
+    background-repeat: repeat-y;
+    align-content: center;
+    font-family: Helvetica;
+}
+.registration{
+    margin-top: 8%;
+    align-content: center;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 70%;
+    position: absolute;
+    transform: translate(120%,-50%);
+    box-sizing: border-box;
+    padding: 50px;
+    margin-bottom: 3%;
+}
+
+#Tech{
+    bottom: 0%;
+    left: 15%;
+    display: inline-block;
+    float: left;
+    height: 90%;
+    position: fixed;
+}
+h1{
+      margin: 0;
+    padding: 0 0 20px;
+     position: absolute;
+    transform: translate(30%,100%);
+    letter-spacing: -5px;
+    text-align: center;
+    font-size: 160px;
+    font-style: italic;
+    color: black;
+}
+
+
+
+#photo{
+    width: 200px;
+    margin: 20px;
+    position: fixed;
+}
+
+.label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+#sub
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:dodgerblue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+}
+#sub1
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:dodgerblue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    padding-left: 40px;
+}         
+#sub:hover
+{
+    cursor: pointer;
+    background: skyblue;
+    color: #000;
+}
+
+.name
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 60%;;
+}

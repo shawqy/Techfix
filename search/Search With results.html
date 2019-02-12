@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Search for Technician</title>
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+ <link rel="icon" href="hq%20logo2.png" > 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+        
+        function on(){
+/***************************** Recieve number of search results from php and put it in variable numOfRes MAX 6 RESULTS *************************/
+            var numOfRes,i;  //i serves as counter for displayed cards
+            numOfRes=6; //initial value for testing ****** value of numOfRes should be recieved from php MAX 6 RESULTS*****
+            
+            for(i=0;i<numOfRes; i+=1) //display only the number of cards required
+            {
+            document.getElementsByClassName('card')[i].style.display='inline-block';
+            }
+        }
+        
+        function feed1()
+        {
+             if(document.getElementById("rating1").style.display=="none")
+                    {
+                        document.getElementById("feed1btn").innerHTML="Send Feedback";
+                        document.getElementById("cat1").style.display='none';
+                        document.getElementById("catword1").style.display='none';
+                        document.getElementById("address1").style.display='none';
+                        document.getElementById("addressword1").style.display='none';
+                        document.getElementById("rating1").style.display='block';
+                        document.getElementById("ratingword1").style.display='block';
+                        document.getElementById("comment1").style.display='block';
+                        document.getElementById("commentword1").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed1btn").innerHTML="Feedback";
+                        document.getElementById("cat1").style.display='block';
+                        document.getElementById("catword1").style.display='block';
+                        document.getElementById("address1").style.display='block';
+                        document.getElementById("addressword1").style.display='block';
+                        document.getElementById("rating1").style.display='none';
+                        document.getElementById("ratingword1").style.display='none';
+                        document.getElementById("comment1").style.display='none';
+                        document.getElementById("commentword1").style.display='none';
+                }
+        }
+        
+        function feed2()
+        {
+             if(document.getElementById("rating2").style.display=="none")
+                    {
+                        document.getElementById("feed2btn").innerHTML="Send Feedback";
+                        document.getElementById("cat2").style.display='none';
+                        document.getElementById("catword2").style.display='none';
+                        document.getElementById("address2").style.display='none';
+                        document.getElementById("addressword2").style.display='none';
+                        document.getElementById("rating2").style.display='block';
+                        document.getElementById("ratingword2").style.display='block';
+                        document.getElementById("comment2").style.display='block';
+                        document.getElementById("commentword2").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed2btn").innerHTML="Feedback";
+                        document.getElementById("cat2").style.display='block';
+                        document.getElementById("catword2").style.display='block';
+                        document.getElementById("address2").style.display='block';
+                        document.getElementById("addressword2").style.display='block';
+                        document.getElementById("rating2").style.display='none';
+                        document.getElementById("ratingword2").style.display='none';
+                        document.getElementById("comment2").style.display='none';
+                        document.getElementById("commentword2").style.display='none';
+                }
+        }
+        
+        function feed3()
+        {
+             if(document.getElementById("rating3").style.display=="none")
+                    {
+                        document.getElementById("feed3btn").innerHTML="Send Feedback";
+                        document.getElementById("cat3").style.display='none';
+                        document.getElementById("catword3").style.display='none';
+                        document.getElementById("address3").style.display='none';
+                        document.getElementById("addressword3").style.display='none';
+                        document.getElementById("rating3").style.display='block';
+                        document.getElementById("ratingword3").style.display='block';
+                        document.getElementById("comment3").style.display='block';
+                        document.getElementById("commentword3").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed3btn").innerHTML="Feedback";
+                        document.getElementById("cat3").style.display='block';
+                        document.getElementById("catword3").style.display='block';
+                        document.getElementById("address3").style.display='block';
+                        document.getElementById("addressword3").style.display='block';
+                        document.getElementById("rating3").style.display='none';
+                        document.getElementById("ratingword3").style.display='none';
+                        document.getElementById("comment3").style.display='none';
+                        document.getElementById("commentword3").style.display='none';
+                }
+        }
+        
+        function feed4()
+        {
+             if(document.getElementById("rating4").style.display=="none")
+                    {
+                        document.getElementById("feed4btn").innerHTML="Send Feedback";
+                        document.getElementById("cat4").style.display='none';
+                        document.getElementById("catword4").style.display='none';
+                        document.getElementById("address4").style.display='none';
+                        document.getElementById("addressword4").style.display='none';
+                        document.getElementById("rating4").style.display='block';
+                        document.getElementById("ratingword4").style.display='block';
+                        document.getElementById("comment4").style.display='block';
+                        document.getElementById("commentword4").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed4btn").innerHTML="Feedback";
+                        document.getElementById("cat4").style.display='block';
+                        document.getElementById("catword4").style.display='block';
+                        document.getElementById("address4").style.display='block';
+                        document.getElementById("addressword4").style.display='block';
+                        document.getElementById("rating4").style.display='none';
+                        document.getElementById("ratingword4").style.display='none';
+                        document.getElementById("comment4").style.display='none';
+                        document.getElementById("commentword4").style.display='none';
+                }
+        }
+        
+        function feed5()
+        {
+             if(document.getElementById("rating5").style.display=="none")
+                    {
+                        document.getElementById("feed5btn").innerHTML="Send Feedback";
+                        document.getElementById("cat5").style.display='none';
+                        document.getElementById("catword5").style.display='none';
+                        document.getElementById("address5").style.display='none';
+                        document.getElementById("addressword5").style.display='none';
+                        document.getElementById("rating5").style.display='block';
+                        document.getElementById("ratingword5").style.display='block';
+                        document.getElementById("comment5").style.display='block';
+                        document.getElementById("commentword5").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed5btn").innerHTML="Feedback";
+                        document.getElementById("cat5").style.display='block';
+                        document.getElementById("catword5").style.display='block';
+                        document.getElementById("address5").style.display='block';
+                        document.getElementById("addressword5").style.display='block';
+                        document.getElementById("rating5").style.display='none';
+                        document.getElementById("ratingword5").style.display='none';
+                        document.getElementById("comment5").style.display='none';
+                        document.getElementById("commentword5").style.display='none';
+                }
+        }
+        
+        function feed6()
+        {
+             if(document.getElementById("rating6").style.display=="none")
+                    {
+                        document.getElementById("feed6btn").innerHTML="Send Feedback";
+                        document.getElementById("cat6").style.display='none';
+                        document.getElementById("catword6").style.display='none';
+                        document.getElementById("address6").style.display='none';
+                        document.getElementById("addressword6").style.display='none';
+                        document.getElementById("rating6").style.display='block';
+                        document.getElementById("ratingword6").style.display='block';
+                        document.getElementById("comment6").style.display='block';
+                        document.getElementById("commentword6").style.display='block';
+                    }
+            else
+                {
+                    
+                        document.getElementById("feed6btn").innerHTML="Feedback";
+                        document.getElementById("cat6").style.display='block';
+                        document.getElementById("catword6").style.display='block';
+                        document.getElementById("address6").style.display='block';
+                        document.getElementById("addressword6").style.display='block';
+                        document.getElementById("rating6").style.display='none';
+                        document.getElementById("ratingword6").style.display='none';
+                        document.getElementById("comment6").style.display='none';
+                        document.getElementById("commentword6").style.display='none';
+                }
+        }
+    
+    </script>
+    </head>
+<body>
+    <dev style="display: block;background-color: rgba(0, 0, 0, 0.49);">
+     <button type="submit" class="btn btn header" style=" margin: 15px 200px; background-color: rgba(197, 197, 197, 0.62);font-family:'metropolis-regular',sans-serif;text-transform: uppercase;font-size: 0.8rem;padding: 10px 25px;border:0rem solid #c5c5c5;border-radius: 3px;letter-spacing: 0.15rem;color: #123e64;font-weight:bold;">Profile</button>
+    <button type="submit" class="btn btn header" style=" margin: 15px 200px; background-color: rgba(197, 197, 197, 0.62);font-family:'metropolis-regular',sans-serif;text-transform: uppercase;font-size: 0.8rem;padding: 10px 25px;border:0rem solid #c5c5c5;border-radius: 3px;letter-spacing: 0.15rem;color: #123e64;font-weight:bold;">Sign Out</button>
+    </dev>
+     <br>
+     <br>
+    <img src="techfix.png"   width="20%" class="mx-auto d-block logo">
+    
+    <form class="reg" action="" method="post" onsubmit="return false">
+        <div class="form-group col-lg-4 mx-auto d-block">   
+            <label >Search For Your Technician </label>
+            <br>
+            <input  class="form1-control" type="text" placeholder="Search" name="search">
+            <select class = "list"name="Choose">
+                <option value="name">Name</option>
+                <option value="categ">Category</option>
+                <option value="area">Area</option>
+                </select>
+            <br>
+            <br>
+           <button type="submit" id="Search" onclick="on()" class="btn sub">Search</button>            
+        </div>
+    </form>
+    
+    
+    
+        <div class = " card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6 style="margin-top: 15px">NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat1">CATEGORY:</h6>
+            <h6 id="rating1" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword1">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword1" style="display: none;max-width:200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address1">Address:</h6>
+            <h6 id="comment1" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword1">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword1" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed1();" id="feed1btn">Give Feedback</button>
+        </div>
+    
+    
+        <div class = "card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6 style="margin-top: 15px">NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat2">CATEGORY:</h6>
+            <h6 id="rating2" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword2">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword2" style="display: none;max-width: 200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address2">Address:</h6>
+            <h6 id="comment2" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword2">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword2" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed2();" id="feed2btn">Give Feedback</button>
+        </div>
+    
+    
+        <div class = "card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6 style="margin-top: 15px">NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat3">CATEGORY:</h6>
+            <h6 id="rating3" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword3">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword3" style="display: none;max-width: 200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address3">Address:</h6>
+            <h6 id="comment3" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword3">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword3" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed3();" id="feed3btn">Give Feedback</button>
+        </div>
+    
+    
+        <div class = "card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6>NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat4">CATEGORY:</h6>
+            <h6 id="rating4" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword4">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword4" style="display: none;max-width: 200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address4">Address:</h6>
+            <h6 id="comment4" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword4">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword4" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed4();" id="feed4btn">Give Feedback</button>
+        </div>
+    
+    
+        <div class = "card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6 style="margin-top: 15px">NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat5">CATEGORY:</h6>
+            <h6 id="rating5" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword5">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword5" style="display: none;max-width: 200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address5">Address:</h6>
+            <h6 id="comment5" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword5">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword5" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed5();" id="feed5btn">Give Feedback</button>
+        </div>
+    
+    
+        <div class = "card">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="user.png">
+            <h6 style="margin-top: 15px">NAME:</h6>
+            <p>Zyad mohamed</p>
+            <h6>AGE:</h6>
+            <p>25</p>
+            <h6>RATING:</h6>
+            <p>4.1/5.0</p>
+            <h6>previous comments:</h6>
+            <p>- He gets the work done but he can do better next times. He is an okay plumber.</p>
+            <p>- He is a truly fantastic Plumber.</p>
+            <h6>PHONE NUMBER:</h6>
+            <p>01012345678</p>
+            <h6>WORKING HOURS:</h6>
+            <p>10AM-2PM</p>
+            <h6>WORKING DAYS:</h6>
+            <p>sat-sun</p>
+            <h6 id="cat6">CATEGORY:</h6>
+            <h6 id="rating6" style="display: none; color: white;">Rating from 1 to 5 :</h6>
+            <p id="catword6">computer ad donya</p>
+            <input type="text" class="form-control" id= "ratingword6" style="display: none;max-width: 200px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <h6 id="address6">Address:</h6>
+            <h6 id="comment6" style="display: none; color: white;">Comment :</h6>
+            <p id="addressword6">kol 7ta w kol makan</p>
+            <input type="text" class="form-control" id= "commentword6" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
+            <button type="submit" class="btn feedbtn" onclick="feed6();" id="feed6btn">Give Feedback</button>
+        </div>
+    </body>
+
+</html>

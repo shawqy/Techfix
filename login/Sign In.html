@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>login page </title>
+     <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href='hq%20logo2.png'>
+</head>
+<style>
+   
+    </style>
+    <body>
+
+    <img src="logo.png" id="photo">  
+    <div class="login-box">
+        <img src="user.png" class="avatar">
+        <h1>Welcome</h1>
+        <form>
+            <p>Email</p>
+<!-- ======================= Email that will be checked with database for valid accounts ==================================== -->
+            <input type="text" name="email" placeholder="Enter your Email">
+            <p>Password</p>
+<!-- ======================= Password that will be checked with database for valid accounts ==================================== -->
+            <input type="password" name="password" placeholder="Enter Password">
+<!-- ======================= Type of Account to determine in which database we should check  ==================================== -->
+            <input  type="radio" name="type">Client &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="type">Technician
+<!-- =========================================== Submit the data to be checked with database ==================================== -->
+            <input type="submit" name="submit" value="Login">
+        </form> 
+    </div>
+        
+    </body>
+</html>

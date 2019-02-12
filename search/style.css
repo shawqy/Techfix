@@ -1,0 +1,101 @@
+@media(max-width:725px){.logo{width:80% }}
+
+.logo{
+    margin-top: 10px;
+}
+    
+body{
+    font-family: Helvetica;
+    background-image: url(pattern1.jpg); 
+    background-size:cover;
+    height: 700px;
+    background-repeat: repeat-y;
+    color: aliceblue;
+    background-position:top;
+    text-align: center;
+    align-content: center;
+}
+
+.form1-control{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    border-style: hidden;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 100px
+}
+
+.list{
+    display: inline-block;
+    height: 40px;
+    border-style: hidden;
+    margin-left: 0px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    font-family: Helvetica;
+}
+
+.sub{
+    background-color: cornflowerblue;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px
+}
+
+.sub:hover{
+    background-color:dodgerblue;
+}
+
+.card{ 
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height:auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+    display: none;
+} 
+
+.card .img-profile {
+    max-width: 8rem;
+    max-height: 8rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.34);
+    margin-bottom: 50px
+  }
+
+.card .feedbtn{
+    align-items: center;
+    font-size:80%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right
+}
+
+.card .feedbtn:hover{
+    background-color: rgb(180, 180, 180);
+    
+}
+
+p{
+    color: white;
+}
+
+h6{
+    color: white;
+    font-weight:bolder; 
+    text-transform: uppercase;
+}
+.rating{
+    display: inline;
+    float: right;
+    
+}
