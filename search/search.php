@@ -57,7 +57,8 @@ else
         {
              if(document.getElementById("rating1").style.display=="none")
                     {
-                        document.getElementById("feed1btn").innerHTML="Send Feedback";
+                        document.getElementById("feed1btn").style.display='block';
+                        document.getElementById("submitfeed").style.display='none';
                         document.getElementById("cat1").style.display='none';
                         document.getElementById("catword1").style.display='none';
                         document.getElementById("address1").style.display='none';
@@ -70,8 +71,8 @@ else
             else
                 {
                     
-                        document.getElementById("feed1btn").innerHTML="Feedback";
-                        document.getElementById("cat1").style.display='block';
+                        document.getElementById("feed1btn").style.display='none';
+                        document.getElementById("submitfeed").style.display='block';
                         document.getElementById("catword1").style.display='block';
                         document.getElementById("address1").style.display='block';
                         document.getElementById("addressword1").style.display='block';
@@ -80,151 +81,9 @@ else
                         document.getElementById("comment1").style.display='none';
                         document.getElementById("commentword1").style.display='none';
                 }
-        }
         
-        function feed2()
-        {
-             if(document.getElementById("rating2").style.display=="none")
-                    {
-                        document.getElementById("feed2btn").innerHTML="Send Feedback";
-                        document.getElementById("cat2").style.display='none';
-                        document.getElementById("catword2").style.display='none';
-                        document.getElementById("address2").style.display='none';
-                        document.getElementById("addressword2").style.display='none';
-                        document.getElementById("rating2").style.display='block';
-                        document.getElementById("ratingword2").style.display='block';
-                        document.getElementById("comment2").style.display='block';
-                        document.getElementById("commentword2").style.display='block';
-                    }
-            else
-                {
-                    
-                        document.getElementById("feed2btn").innerHTML="Feedback";
-                        document.getElementById("cat2").style.display='block';
-                        document.getElementById("catword2").style.display='block';
-                        document.getElementById("address2").style.display='block';
-                        document.getElementById("addressword2").style.display='block';
-                        document.getElementById("rating2").style.display='none';
-                        document.getElementById("ratingword2").style.display='none';
-                        document.getElementById("comment2").style.display='none';
-                        document.getElementById("commentword2").style.display='none';
-                }
-        }
         
-        function feed3()
-        {
-             if(document.getElementById("rating3").style.display=="none")
-                    {
-                        document.getElementById("feed3btn").innerHTML="Send Feedback";
-                        document.getElementById("cat3").style.display='none';
-                        document.getElementById("catword3").style.display='none';
-                        document.getElementById("address3").style.display='none';
-                        document.getElementById("addressword3").style.display='none';
-                        document.getElementById("rating3").style.display='block';
-                        document.getElementById("ratingword3").style.display='block';
-                        document.getElementById("comment3").style.display='block';
-                        document.getElementById("commentword3").style.display='block';
-                    }
-            else
-                {
-                    
-                        document.getElementById("feed3btn").innerHTML="Feedback";
-                        document.getElementById("cat3").style.display='block';
-                        document.getElementById("catword3").style.display='block';
-                        document.getElementById("address3").style.display='block';
-                        document.getElementById("addressword3").style.display='block';
-                        document.getElementById("rating3").style.display='none';
-                        document.getElementById("ratingword3").style.display='none';
-                        document.getElementById("comment3").style.display='none';
-                        document.getElementById("commentword3").style.display='none';
-                }
-        }
-        
-        function feed4()
-        {
-             if(document.getElementById("rating4").style.display=="none")
-                    {
-                        document.getElementById("feed4btn").innerHTML="Send Feedback";
-                        document.getElementById("cat4").style.display='none';
-                        document.getElementById("catword4").style.display='none';
-                        document.getElementById("address4").style.display='none';
-                        document.getElementById("addressword4").style.display='none';
-                        document.getElementById("rating4").style.display='block';
-                        document.getElementById("ratingword4").style.display='block';
-                        document.getElementById("comment4").style.display='block';
-                        document.getElementById("commentword4").style.display='block';
-                    }
-            else
-                {
-                    
-                        document.getElementById("feed4btn").innerHTML="Feedback";
-                        document.getElementById("cat4").style.display='block';
-                        document.getElementById("catword4").style.display='block';
-                        document.getElementById("address4").style.display='block';
-                        document.getElementById("addressword4").style.display='block';
-                        document.getElementById("rating4").style.display='none';
-                        document.getElementById("ratingword4").style.display='none';
-                        document.getElementById("comment4").style.display='none';
-                        document.getElementById("commentword4").style.display='none';
-                }
-        }
-        
-        function feed5()
-        {
-             if(document.getElementById("rating5").style.display=="none")
-                    {
-                        document.getElementById("feed5btn").innerHTML="Send Feedback";
-                        document.getElementById("cat5").style.display='none';
-                        document.getElementById("catword5").style.display='none';
-                        document.getElementById("address5").style.display='none';
-                        document.getElementById("addressword5").style.display='none';
-                        document.getElementById("rating5").style.display='block';
-                        document.getElementById("ratingword5").style.display='block';
-                        document.getElementById("comment5").style.display='block';
-                        document.getElementById("commentword5").style.display='block';
-                    }
-            else
-                {
-                    
-                        document.getElementById("feed5btn").innerHTML="Feedback";
-                        document.getElementById("cat5").style.display='block';
-                        document.getElementById("catword5").style.display='block';
-                        document.getElementById("address5").style.display='block';
-                        document.getElementById("addressword5").style.display='block';
-                        document.getElementById("rating5").style.display='none';
-                        document.getElementById("ratingword5").style.display='none';
-                        document.getElementById("comment5").style.display='none';
-                        document.getElementById("commentword5").style.display='none';
-                }
-        }
-        
-        function feed6()
-        {
-             if(document.getElementById("rating6").style.display=="none")
-                    {
-                        document.getElementById("feed6btn").innerHTML="Send Feedback";
-                        document.getElementById("cat6").style.display='none';
-                        document.getElementById("catword6").style.display='none';
-                        document.getElementById("address6").style.display='none';
-                        document.getElementById("addressword6").style.display='none';
-                        document.getElementById("rating6").style.display='block';
-                        document.getElementById("ratingword6").style.display='block';
-                        document.getElementById("comment6").style.display='block';
-                        document.getElementById("commentword6").style.display='block';
-                    }
-            else
-                {
-                    
-                        document.getElementById("feed6btn").innerHTML="Feedback";
-                        document.getElementById("cat6").style.display='block';
-                        document.getElementById("catword6").style.display='block';
-                        document.getElementById("address6").style.display='block';
-                        document.getElementById("addressword6").style.display='block';
-                        document.getElementById("rating6").style.display='none';
-                        document.getElementById("ratingword6").style.display='none';
-                        document.getElementById("comment6").style.display='none';
-                        document.getElementById("commentword6").style.display='none';
-                }
+       
         }
     
     </script>
@@ -288,6 +147,7 @@ else
             <p id="addressword1">kol 7ta w kol makan</p>
             <input type="text" class="form-control" id= "commentword1" style="display: none;max-width: 500px;max-height: 30px;margin-bottom: 10px;font-family:'metropolis-semibold',sans-serif;">
             <button type="submit" class="btn feedbtn" onclick="feed1();" id="feed1btn">Give Feedback</button>
+            <button type="submit" class="btn feedbtn" onclick="feed1();" id="submitfeed" style="display: none;">Send Feedback</button>
         </div>
     
     
