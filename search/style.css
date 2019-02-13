@@ -59,7 +59,8 @@ body{
     padding: 10px;
     text-align: left;
     border-radius: 20px;
-    display: none;
+    display: inline-block;
+    
 } 
 
 .card .img-profile {
@@ -95,7 +96,7 @@ h6{
     text-transform: uppercase;
 }
 .rating{
-    display: inline;
+    
     float: right;
     
 }

@@ -31,9 +31,15 @@ $password=$_POST['password'];
      header("location:TechProfile.php");
    
     
- }
+ 							}//end of save edit condition
 
 
+$sql="SELECT * FROM `feedbacks` WHERE Technician_ID = '$tecID'";
+$stmt= $connection->prepare($sql);
+$stmt->execute();
+$returnData=$stmt->fetchall(PDO::FETCH_ASSOC);
+$returnResult = sizeof($returnData);
+//echo "no. of Comments" . $returnResult ;
 
 
 if($tecID) 
@@ -44,12 +50,12 @@ if($tecID)
 	    unset($_SESSION['techPassword']);
 	    unset($_SESSION['techId']);
 	    session_destroy();
-	    header("location:../home/index.php");
+	    header("location: ../login/login.php"); 
 	}
 }
 else 
 {
-	header("location:../home/index.php");
+	header("location:../login/login.php");
 }
 ?>
 <!DOCTYPE html>
@@ -379,16 +385,18 @@ else
               <h4 style="display: block; color: white;" id="rating">Age :<?php echo$row['age']?></h4>
 <!-- ============================================= Overall Rating retrived from the database  =============================================== -->
 <?php
-$sql="SELECT AVG(value) FROM rate WHERE tech_id=$tecID";
- $stmt= $connection->prepare($sql);
- $stmt->execute();
- $avg=$stmt->fetch(PDO::FETCH_ASSOC);
-$v = $avg['AVG(value)']
-
+                 $t =(int)$tecID;
+                 $sql="SELECT AVG(rate) as avg FROM `feedbacks` WHERE Technician_ID='$t'";
+                 $stmt= $connection->prepare($sql);
+                 $stmt->execute();
+                 $avg=$stmt->fetch(PDO::FETCH_ASSOC);
+                 $v = $avg['avg'];
+                // echo $v ;
 ?>
               <h4 style="display: block; color: white;" id="rating">Rating:<?php echo $v ?> /5.0000</h4>
           </div>
-<!-- ============================================= Description Retrived fromthe database =============================================== -->            <p class="lead mb-5" id="desword" style="color: white;">I am experienced in the plumbing business. I have worked for over than 20 years in that fields and can be considered one of the best plumbers there is in the field</p>
+
+         <p class="lead mb-5" id="desword" style="color: white;"><?php echo $row['about'];?></p>
           <h4 style="display: none;color: white;" id="dessub">Description : </h4>
 <!-- ============================================= Description change to be sent to the database ============================================= -->
             <textarea class="form-control" id= "desedit" rows="3" style="display: none;"></textarea>
@@ -489,36 +497,34 @@ $v = $avg['AVG(value)']
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education" tyle="background-image: url(img/pattern1.jpg); background-repeat: no-repeat; background-size: contain; width:100%;" style="background-color: white;">
         <div class="my-auto">
           <h2 class="mb-5">Comments</h2>
+          <?php 
+          for ($i=0; $i < $returnResult ; $i++) { 
+          $rating = $returnData[$i]['rate'];
+          $feed = $returnData[$i]['The Feedback'];
+          $client = $returnData[$i]['Client_ID'];
 
+          $sql1="SELECT * FROM `client` WHERE id ='$client'";
+		  $stmt1= $connection->prepare($sql1);
+		  $stmt1->execute();
+		  $Data=$stmt1->fetch(PDO::FETCH_ASSOC);
+		  $clientName = $Data['Name'];
+          
+          ?>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-<!-- ============================================= Name of commenter 1 retrived from database  ====================================== -->
-              <h3 class="mb-0">Steven McDonald</h3>
-<!-- ============================================= Rating of commenter 1 retrived from database  ====================================== -->
-              <div class="subheading mb-3">Rating: 2.8 / 5.0</div>
-<!-- ============================================= Feedback of commenter 1 retrived from database  ====================================== -->
-              <p>He gets the work done but he can do better next times. He is an Okay plumber</p>
-            </div>
-            <div class="resume-date text-md-right">
-<!-- ============================================= Date of commenter 1 retrived from database  ====================================== -->
-              <span class="text-primary">August 2006</span>
-            </div>
-          </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-<!-- ============================================= Name of commenter 2 retrived from database  ====================================== -->
-              <h3 class="mb-0">Sarah Ben</h3>
+              <h3 class="mb-0"><?php echo $clientName ; ?> </h3>
 <!-- ============================================= Rating of commenter 1 retrived from database  ====================================== -->
-              <div class="subheading mb-3">Rating: 5.0 / 5.0</div>
+              <div class="subheading mb-3">Rating: <?php echo $rating ; ?> / 5.0</div>
 <!-- ============================================= Feedback of commenter 1 retrived from database  ====================================== -->
-              <p>He is a truly fantastic Plumber</p>
+              <p> <?php echo $feed ; ?></p>
             </div>
             <div class="resume-date text-md-right">
 <!-- ============================================= Date of commenter 1 retrived from database  ====================================== -->
-              <span class="text-primary">August 2002</span>
+              
             </div>
           </div>
+      <?php } ?>
 
         </div>
       </section>

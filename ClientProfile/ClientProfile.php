@@ -43,6 +43,12 @@ $filetype=addslashes($_FILES["img"]["type"]);
           $stmt->execute();
      header("location:ClientProfile.php");
  }
+ //go to search
+if(isset($_GET['search']))
+{
+    header("location: ../search/search.php");
+}
+
 //logout
 if($clientID)
 {
@@ -186,8 +192,9 @@ else
             </li>-->
           <li class="nav-item">
               <div class="col-md-1" style="float: right;">
-<!-- ============================================= Button to go back to Search Page ================================================ -->
-                    <button type="submit" onclick="e"  class="btn btn" style="float: right; margin-right:-10px;margin-top: 20px; background-color: rgba(197, 197, 197, 0.62);font-family:'metropolis-semibold',sans-serif;text-transform: uppercase;font-size: 0.8rem;padding: 10px 25px;border:0rem solid #c5c5c5;border-radius: 3px;color: #123e64;font-weight:bold;">Search For a Technician</button>      
+                    <form action="ClientProfile.php" method="GET">
+                    <button type="submit" onclick="e"  class="btn btn" style="float: right; margin-right:-10px;margin-top: 20px; background-color: rgba(197, 197, 197, 0.62);font-family:'metropolis-semibold',sans-serif;text-transform: uppercase;font-size: 0.8rem;padding: 10px 25px;border:0rem solid #c5c5c5;border-radius: 3px;color: #123e64;font-weight:bold;" name="search">Search For a Technician</button>  
+                      </form>    
             </div>
           </li>
           <li class="nav-item">
